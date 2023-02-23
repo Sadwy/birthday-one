@@ -1,6 +1,6 @@
 function BirthDay() {
-    window.setTimeout("BirthDay()", 1000);
-        BirthDay = new Date("08/01/2000 00:00:00"); // 修改出生日期
+    BirthDay = new Date("02/24/2000 00:00:00"); // 修改出生日期
+    setInterval(function() {
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -14,5 +14,6 @@ function BirthDay() {
         minsold = Math.floor((e_hrsold - hrsold) * 60);
         seconds = Math.floor((e_minsold - minsold) * 60);
         span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
-    }
-    BirthDay();
+    }, 1000);  // 间隔1000ms刷新一次
+}
+BirthDay();
