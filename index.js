@@ -4,7 +4,7 @@ var S = {
         document.body.classList.add('body--ready');
             //想说什么
             // S.UI.simulate("祝你|生日快乐哟|#countdown 3|#rectangle 15x15|#circle 12 |#time");
-            S.UI.simulate("叮|#countdown 3|★|祝你|生日快乐!");
+            S.UI.simulate("叮|#countdown 3|★|祝雄|生日快乐!");
             // 倒计时放在最前面, 会有显示问题
             S.Drawing.loop(function () {
                 S.Shape.render();

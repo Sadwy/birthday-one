@@ -1,5 +1,5 @@
 function BirthDay() {
-    BirthDay = new Date("02/24/2000 00:00:00"); // 修改出生日期
+    BirthDay = new Date("06/14/2000 00:00:00"); // 修改出生日期
     setInterval(function() {
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
